@@ -16,10 +16,10 @@ $(document).ready(function () {
       },
       1000
     );
-    $(".landing").find("h1").replaceWith("<h1>Hello again.</h1>");
+    $(".landing").find("h1").replaceWith("<h1>Hi again.</h1>");
     $(".landing")
       .find("h6")
-      .replaceWith("<h6>You're on the site already.</h6>");
+      .replaceWith("<h6>You're already on the site.</h6>");
 
     $("#self").on("click", function () {
       $("html, body").animate(
@@ -28,40 +28,31 @@ $(document).ready(function () {
         },
         1000
       );
-      $(".landing").find("h1").replaceWith("<h1>Alright now.</h1>");
-      $(".landing").find("h6").replaceWith("<h6>Please stop clicking.</h6>");
+      $(".landing").find("h1").replaceWith("<h1>You clicked again?</h1>");
+      $(".landing")
+        .find("h6")
+        .replaceWith("<h6>I'm not hiding anything, I swear.</h6>");
 
       $("#self").on("click", function () {
+        var audio = new Audio(
+          "https://www.myinstants.com/media/sounds/untitled_dSmd8Co.mp3"
+        );
+        audio.play();
+
         $("html, body").animate(
           {
             scrollTop: 0,
           },
           1000
         );
-        $(".landing").find("h1").replaceWith("<h1>Enough.</h1>");
-        $(".landing").find("h6").replaceWith("<h6>I'm warning you.</h6>");
+        $(".landing").find("h1").replaceWith("<h1>change da world</h1>");
+        $(".landing")
+          .find("h6")
+          .replaceWith("<h6>my final message. Goodb ye</h6>");
 
-        $("#self").on("click", function () {
-          var audio = new Audio(
-            "https://www.myinstants.com/media/sounds/untitled_dSmd8Co.mp3"
-          );
-          audio.play();
-
-          $("html, body").animate(
-            {
-              scrollTop: 0,
-            },
-            1000
-          );
-          $(".landing").find("h1").replaceWith("<h1>change da world</h1>");
-          $(".landing")
-            .find("h6")
-            .replaceWith("<h6>my final message. Goodb ye</h6>");
-
-          setTimeout(function () {
-            $(".astronaut").fadeOut(3000);
-          }, 8700);
-        });
+        setTimeout(function () {
+          $(".astronaut").fadeOut(5000);
+        }, 7500);
       });
     });
   });

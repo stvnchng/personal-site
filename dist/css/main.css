@@ -22,6 +22,7 @@ html {
     #283a4e 35%,
     #0b0c13 100%
   );
+  overflow-x: hidden;
 }
 
 body {
@@ -251,6 +252,10 @@ li {
   padding-right: 5rem;
 }
 
+.profile-pic img {
+  border-radius: 50%;
+}
+
 .profile-pic .socials {
   margin-top: 3rem;
 }
@@ -280,9 +285,12 @@ li {
 }
 
 .work-img {
-  /* width: 50rem; */
   margin-right: 5rem;
   flex: 1;
+}
+
+.work-img img {
+  border-radius: 4%;
 }
 
 .work-desc {
@@ -539,7 +547,6 @@ footer {
 
   .profile-pic {
     padding: 0 0 3.6rem 0;
-    /* margin-right: 0; */
     margin-top: -5rem;
   }
 
@@ -595,9 +602,6 @@ footer {
 
 /* Smartphone */
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
   .name {
     font-size: 2rem;
   }
