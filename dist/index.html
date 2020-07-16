@@ -50,7 +50,7 @@
           <h1>About</h1>
         </div>
         <div class="profile-whole">
-          <div class="profile-pic" data-aos="fade-right" data-aos-delay="250">
+          <div class="profile-pic" data-aos="fade-right" data-aos-delay="200">
             <img src="media/face.jpg" alt="" />
             <div class="socials">
               <ul class="socials-list">
@@ -97,7 +97,7 @@
               </ul>
             </div>
           </div>
-          <div class="profile" data-aos="fade-left" data-aos-delay="250">
+          <div class="profile" data-aos="fade-left" data-aos-delay="200">
             <p>
               Hi! I'm Steven, and I'm a student at Rice majoring in computer
               science (how unique, I know). I love to design. I made this
@@ -124,10 +124,10 @@
           <h1>Work</h1>
         </div>
         <div class="work-item first-item">
-          <div class="work-img" data-aos="fade-right" data-aos-delay="250">
+          <div class="work-img" data-aos="fade-right" data-aos-delay="200">
             <img src="media/casectrl.png" />
           </div>
-          <div class="work-desc" data-aos="fade-left" data-aos-delay="250">
+          <div class="work-desc" data-aos="fade-left" data-aos-delay="200">
             <h6>Full Stack Development</h6>
             <h1>CaseCtrl</h1>
             <p>
@@ -144,38 +144,52 @@
               class="cta"
               >View Project</a
             >
+            <!-- <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://casectrl.com/#features"
+              class="cta"
+              >Github Repo</a
+            > -->
           </div>
         </div>
         <div class="work-item">
-          <div class="work-img" data-aos="fade-right" data-aos-delay="250">
+          <div class="work-img" data-aos="fade-right" data-aos-delay="200">
             <img src="media/site.png" />
           </div>
-          <div class="work-desc" data-aos="fade-left" data-aos-delay="250">
+          <div class="work-desc" data-aos="fade-left" data-aos-delay="200">
             <h6>Web Design</h6>
             <h1>Personal Site</h1>
             <p>
               After eons of procrastination, I (finally) made a website. This
               site was coded from scratch using just the holy trinity. I spent 3
-              long days building this, and most time was spent drawing the art
-              and making it responsive. This design was something I came up with
+              long days building this. Most time was spent drawing the art and
+              making it responsive. This design was something I came up with
               after I scrapped two old designs.
             </p>
             <a href="#" class="cta" id="self">View Project</a>
+            <!-- <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/stvnchng/personal_site"
+              class="cta"
+              >Github Repo</a
+            > -->
           </div>
         </div>
-        <!-- <div class="work-item">
-          <div class="work-img" data-aos="fade-right" data-aos-delay="250">
+        <div class="work-item">
+          <div class="work-img" data-aos="fade-right" data-aos-delay="200">
             <img src="media/intruder.png" />
           </div>
-          <div class="work-desc" data-aos="fade-left" data-aos-delay="250">
+          <div class="work-desc" data-aos="fade-left" data-aos-delay="200">
             <h6>Game Design</h6>
             <h1>Intruder</h1>
             <p>
-              Intruder is a story puzzle platformer that I whipped up with a
-              friend. We wrote the game using Pygame. I also wrote the story,
-              created all art, and produced the OST. Saying that this took a
-              while would be the understatement of my lifetime. We're planning
-              to remake it with Unity for a better result.
+              Intruder is a story platformer that I whipped up with a friend. It
+              was written using Pygame. I also wrote the story, created all art,
+              and made the OST. Saying that this took a while would be the
+              understatement of my lifetime. We're planning to remake it with
+              Unity for a better result.
             </p>
             <a
               target="_blank"
@@ -184,13 +198,20 @@
               class="cta"
               >View Project</a
             >
+            <!-- <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/stvnchng/intruder"
+              class="cta"
+              >Github Repo</a
+            > -->
           </div>
-        </div> -->
+        </div>
         <div class="work-item">
-          <div class="work-img" data-aos="fade-right" data-aos-delay="250">
+          <div class="work-img" data-aos="fade-right" data-aos-delay="200">
             <img src="media/kopis.png" />
           </div>
-          <div class="work-desc" data-aos="fade-left" data-aos-delay="250">
+          <div class="work-desc" data-aos="fade-left" data-aos-delay="200">
             <h6>Mobile Development</h6>
             <h1>Kopis Mobile</h1>
             <p>
@@ -206,6 +227,13 @@
               class="cta"
               >View Project</a
             >
+            <!-- <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/stvnchng/personal_site"
+              class="cta"
+              >Github Repo</a
+            > -->
           </div>
         </div>
       </div>
@@ -215,11 +243,16 @@
       <div class="container">
         <div class="heading" data-aos="fade-up" data-aos-delay="100">
           <h1>Contact</h1>
-          <p style="padding-top: 3rem; margin-bottom: -3rem;">
+          <p style="padding-top: 3rem; margin-bottom: -4rem;">
             Let's chat!
           </p>
         </div>
-        <form action="" data-aos="fade-up" data-aos-delay="250">
+        <form
+          action=""
+          id="contactForm"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <label for="name">Name:</label>
           <input
             type="text"
@@ -238,7 +271,8 @@
           />
           <label for="message">Message:</label>
           <textarea name="message" id="message" cols="10" rows="10"></textarea>
-          <input type="submit" value="Submit" />
+          <input type="submit" id="submit" value="Submit" />
+          <div class="alert">Your message was delivered!</div>
         </form>
       </div>
     </section>
@@ -297,6 +331,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

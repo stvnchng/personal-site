@@ -1,12 +1,21 @@
-// jQuery
+// jQuery for AOS and Easter Eggs
 $(document).ready(function () {
   $('nav a[href*="#"]').on("click", function () {
-    $("html, body").animate(
-      {
-        scrollTop: $($(this).attr("href")).offset().top,
-      },
-      1100
-    );
+    if ($(this).attr("href") == "#contact") {
+      $("html, body").animate(
+        {
+          scrollTop: $(document).height(),
+        },
+        1100
+      );
+    } else {
+      $("html, body").animate(
+        {
+          scrollTop: $($(this).attr("href")).offset().top,
+        },
+        1100
+      );
+    }
   });
 
   $("#self").on("click", function () {
@@ -52,7 +61,7 @@ $(document).ready(function () {
 
         setTimeout(function () {
           $(".astronaut").fadeOut(5000);
-        }, 7500);
+        }, 7250);
       });
     });
   });
@@ -72,6 +81,66 @@ $(document).ready(function () {
     once: true,
   });
 });
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyDgmSnaVMqXZjuJRDlIrLvOlyKPWL-J2gk",
+  authDomain: "steven-website.firebaseapp.com",
+  databaseURL: "https://steven-website.firebaseio.com",
+  projectId: "steven-website",
+  storageBucket: "steven-website.appspot.com",
+  messagingSenderId: "397170568709",
+  appId: "1:397170568709:web:a553ee5aead36ab564b66c",
+  measurementId: "G-R63FD3NPNM",
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// Messages reference
+var messagesRef = firebase.database().ref("messages");
+
+// Form submission listener
+document.getElementById("contact").addEventListener("submit", submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+
+  var name = getInputVal("name");
+  var email = getInputVal("email");
+  var message = getInputVal("message");
+
+  saveMessage(name, email, message);
+
+  document.querySelector(".alert").style.display = "block";
+
+  setTimeout(function () {
+    document.querySelector(".alert").style.display = "none";
+  }, 5000);
+
+  $("html, body").animate(
+    {
+      scrollTop: $(document).height(),
+    },
+    0
+  );
+
+  document.getElementById("contactForm").reset();
+}
+
+function getInputVal(id) {
+  return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(name, email, message) {
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    email: email,
+    message: message,
+  });
+}
 
 // Poggers
 document.getElementById("year").innerHTML = new Date().getFullYear();
