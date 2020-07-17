@@ -637,3 +637,8 @@ footer {
     margin: 0 1rem;
   }
 }
+
+.up {
+  width: 4rem;
+  height: 4rem;
+}
