@@ -14,14 +14,12 @@ html {
   font-size: 12px;
   font-family: "Quicksand", sans-serif;
   color: #eee;
-  background: linear-gradient(
-    0deg,
-    #797979 0%,
-    #797979 3%,
-    #283a4e 25%,
-    #283a4e 35%,
-    #0b0c13 100%
-  );
+  background: linear-gradient(0deg,
+      #797979 0%,
+      #797979 3%,
+      #283a4e 25%,
+      #283a4e 35%,
+      #0b0c13 100%);
   overflow-x: hidden;
 }
 
@@ -321,7 +319,7 @@ li {
   font-size: 1.5rem;
   font-weight: bolder;
   text-transform: uppercase;
-  color: #1256df;
+  color: #3e7fff;
 }
 
 /* Contact */
@@ -449,9 +447,11 @@ footer {
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -461,9 +461,11 @@ footer {
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -473,9 +475,11 @@ footer {
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -485,9 +489,11 @@ footer {
   0% {
     transform: translatey(5px);
   }
+
   50% {
     transform: translatey(-13px);
   }
+
   100% {
     transform: translatey(5px);
   }
@@ -497,9 +503,11 @@ footer {
   0% {
     box-shadow: 0 0 0 0 rgba(40, 40, 40, 0.99);
   }
+
   70% {
     box-shadow: 0 0 0 2rem rgba(0, 0, 0, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
@@ -590,6 +598,7 @@ footer {
   .heading:not(.contact h1) {
     margin-bottom: -5rem;
   }
+
   .container p {
     font-size: 1.5rem;
   }

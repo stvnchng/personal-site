@@ -1063,9 +1063,10 @@
 
 @-webkit-keyframes animStar {
   from {
-    -webkit-transform: translateY(-675px);
-    transform: translateY(-675px);
+    -webkit-transform: translateY(-670px);
+    transform: translateY(-670px);
   }
+
   to {
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
@@ -1074,12 +1075,14 @@
 
 @keyframes animStar {
   from {
-    -webkit-transform: translateY(-675px);
-    transform: translateY(-675px);
+    -webkit-transform: translateY(-670px);
+    transform: translateY(-670px);
   }
+
   to {
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 }
+
 /*# sourceMappingURL=background.css.map */
