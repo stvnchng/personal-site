@@ -1,4 +1,4 @@
-// jQuery for AOS and Easter Eggs
+// Scrolling animations and whatnot
 $(document).ready(function () {
   $('nav a[href*="#"]').on("click", function () {
     if ($(this).attr("href") == "#contact") {

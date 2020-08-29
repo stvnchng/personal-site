@@ -266,10 +266,6 @@ li {
   flex: 1;
 }
 
-.profile p span {
-  font-style: italic;
-}
-
 /* Work */
 .work-item {
   display: flex;
