@@ -14,12 +14,14 @@ html {
   font-size: 12px;
   font-family: "Quicksand", sans-serif;
   color: #eee;
-  background: linear-gradient(0deg,
-      #797979 0%,
-      #797979 3%,
-      #283a4e 25%,
-      #283a4e 35%,
-      #0b0c13 100%);
+  background: linear-gradient(
+    0deg,
+    #797979 0%,
+    #797979 3%,
+    #283a4e 25%,
+    #283a4e 35%,
+    #0b0c13 100%
+  );
   overflow-x: hidden;
 }
 
@@ -73,7 +75,7 @@ header {
   position: sticky;
   padding-bottom: 10rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,6 +183,7 @@ li {
 
 .astronaut img {
   transform: rotate(-15deg);
+  user-select: none;
 }
 
 /* General-purpose Container */
@@ -264,6 +267,7 @@ li {
 
 .profile {
   flex: 1;
+  user-select: none;
 }
 
 /* Work */
