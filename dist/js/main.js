@@ -82,7 +82,7 @@ $(document).ready(function () {
   });
 });
 
-// Your web app's Firebase configuration
+// Firebase configuration
 var firebaseConfig = {
   apiKey: "AIzaSyDgmSnaVMqXZjuJRDlIrLvOlyKPWL-J2gk",
   authDomain: "steven-website.firebaseapp.com",
@@ -142,5 +142,4 @@ function saveMessage(name, email, message) {
   });
 }
 
-// Poggers
 document.getElementById("year").innerHTML = new Date().getFullYear();

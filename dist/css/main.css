@@ -99,7 +99,7 @@ header {
 }
 
 li {
-  margin: 0 0.75rem;
+  margin: 0 0.7rem;
 }
 
 .name {
@@ -153,10 +153,10 @@ li {
 .landing {
   font-family: "Open Sans", sans-serif;
   position: absolute;
+  width: 100%;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
   text-align: center;
   z-index: 10;
   user-select: none;
@@ -207,8 +207,7 @@ li {
   font-weight: 300;
   position: relative;
   margin-top: 1.5rem;
-  margin-bottom: 10rem;
-  user-select: none;
+  margin-bottom: 9rem;
 }
 
 .heading h1::before,
@@ -224,14 +223,6 @@ li {
 .heading h1::before {
   width: 10rem;
   height: 2px;
-}
-
-.heading h1::after {
-  width: 1.5rem;
-  height: 1.5rem;
-  bottom: -1.2rem;
-  left: 49.2%;
-  transform: rotate(-45deg);
 }
 
 .heading h6 {
@@ -265,9 +256,8 @@ li {
   font-size: 3.5rem;
 }
 
-.profile {
-  flex: 1;
-  user-select: none;
+.profile p {
+  font-size: 2.15rem;
 }
 
 /* Work */
@@ -378,9 +368,8 @@ input[type="submit"]:hover {
 footer {
   font-weight: 400;
   font-size: 1.2rem;
-  padding-bottom: 2.1rem;
+  padding-bottom: 5rem;
   text-align: center;
-  user-select: none;
   position: relative;
 }
 
@@ -392,7 +381,7 @@ footer {
 }
 
 .socials {
-  margin-top: -3.5rem;
+  margin-top: -3rem;
   margin-bottom: 1.5rem;
 }
 
@@ -404,7 +393,7 @@ footer {
 }
 
 .socials i:hover {
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 
 .fa-facebook-square:hover {
@@ -513,7 +502,6 @@ footer {
   }
 }
 
-/* Breakpoints (Responsitivity) */
 /* Computer Screen */
 @media screen and (max-width: 1366px) {
   .name {
@@ -532,17 +520,8 @@ footer {
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
-  .name {
-    font-size: 2.3rem;
-    margin-left: 0;
-  }
-
-  .nav-link {
-    font-size: 1.4rem;
-  }
-
-  .nav-list:last-child {
-    padding-right: 0;
+  .astronaut {
+    padding-top: 30rem;
   }
 
   .container {
@@ -603,6 +582,10 @@ footer {
     font-size: 1.5rem;
   }
 
+  .profile p {
+    font-size: 2rem;
+  }
+
   form {
     width: 100%;
   }
@@ -614,24 +597,22 @@ footer {
   }
 }
 
-/* Smartphone */
+/* Smaller Tablet */
 @media screen and (max-width: 768px) {
   .name {
     font-size: 2rem;
   }
 
   li {
-    margin: 0 0.2rem;
-  }
-
-  .nav-list:last-child {
-    padding-right: 0;
+    margin: 0 0.25rem;
   }
 
   .astronaut {
-    width: 60%;
-    height: auto;
-    padding-top: 15rem;
+    padding-top: 22rem;
+  }
+
+  .profile p {
+    font-size: 2rem;
   }
 
   .container {
@@ -641,20 +622,29 @@ footer {
   .heading h1 {
     font-size: 2.8rem;
   }
-
-  .profile {
-    margin: 0 1rem;
-  }
 }
 
-/* For really narrow screens */
+/* Phone */
 @media screen and (max-width: 540px) {
   .name {
     font-size: 1.8rem;
+    margin-left: 0.5rem;
   }
 
   .nav-link {
     font-size: 1.2rem;
+  }
+
+  .nav-list:last-child {
+    padding-right: 0;
+  }
+
+  .astronaut {
+    padding-top: 17rem;
+  }
+
+  section {
+    padding: 3.5rem 0;
   }
 
   .up {

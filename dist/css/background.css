@@ -1063,8 +1063,8 @@
 
 @-webkit-keyframes animStar {
   from {
-    -webkit-transform: translateY(-670px);
-    transform: translateY(-670px);
+    -webkit-transform: translateY(-700px);
+    transform: translateY(-700px);
   }
 
   to {
@@ -1075,8 +1075,8 @@
 
 @keyframes animStar {
   from {
-    -webkit-transform: translateY(-670px);
-    transform: translateY(-670px);
+    -webkit-transform: translateY(-700px);
+    transform: translateY(-700px);
   }
 
   to {
