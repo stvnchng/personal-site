@@ -29,7 +29,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
   overflow-x: hidden;
 }
 
@@ -82,9 +81,6 @@ header {
   font-size: 1.6rem;
   z-index: 10;
   user-select: none;
-  animation: fadeIn ease 6s;
-  -webkit-animation: fadeIn ease 6s;
-  -moz-animation: fadeIn ease 6s;
 }
 
 .nav-list {
@@ -187,11 +183,13 @@ li {
 
 /* General-purpose Container */
 .container {
-  max-width: 120rem;
-  width: 70%;
-  height: 100%;
   margin: 0 auto;
-  position: relative;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  margin-top: 0rem;
 }
 
 .heading {
