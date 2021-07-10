@@ -13,7 +13,7 @@
 html {
   font-size: 12px;
   font-family: "Quicksand", sans-serif;
-  color: #eee;
+  color: white;
   background: linear-gradient(
     0deg,
     #797979 0%,
@@ -46,12 +46,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 7rem 0;
 }
 
 a {
   text-decoration: none;
-  color: #eee;
+  color: white;
 }
 
 p {
@@ -245,15 +245,15 @@ li {
 }
 
 .profile-pic img {
-  border-radius: 50%;
+  margin-top: 2rem;
 }
 
 .profile-pic .socials {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .profile-pic .socials i {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .profile p {
