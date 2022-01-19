@@ -14,17 +14,15 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/background.css" />
-    <title>stefu's box</title>
+    <title>my box</title>
   </head>
 
   <body>
+    <div id="particles-js"></div>
     <header>
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
       <nav class="main-nav">
         <h1 class="name">
           <a href="/">Steven<br /><span>Chung</span></a>
@@ -37,7 +35,7 @@
       </nav>
       <div class="landing">
         <h1>Hello.</h1>
-        <h6>Welcome to the landing page.</h6>
+        <h6>Thanks for stopping by.</h6>
       </div>
       <div class="astronaut">
         <img draggable="false" src="media/astronaut.gif" />
@@ -54,6 +52,14 @@
             <img src="media/run.gif" alt="running-pixel-guy" />
             <div class="socials">
               <ul class="socials-list">
+                <li>
+                  <a
+                    href="mailto:sc111@rice.edu"
+                    class="icon-link"
+                  >
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </a>
+                </li>
                 <li>
                   <a
                     target="_blank"
@@ -78,7 +84,7 @@
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="media/ResumeSC.pdf"
+                    href="https://drive.google.com/file/d/1wH1-iK6-sJOMju3P3_1UzgOpVkHHOVJl/view?usp=sharing"
                     class="icon-link"
                   >
                     <i class="fas fa-file"></i>
@@ -88,13 +94,10 @@
             </div>
           </div>
           <div class="profile" data-aos="fade-left" data-aos-delay="150">
-            <p>Hi, I'm Steven. I'm a CS student at Rice.</p>
+            <p>I'm Steven. I'm a senior at Rice studying CS.</p>
             <br />
             <p>
-              I like building things. In addition to coding, I also enjoy
-              creating stories, art, and music. I try to make my projects both
-              functional and beautiful, and I plan to continue this full-time as
-              a UI engineer or designer of sorts.
+              I enjoy creating and designing things. I'm currently looking for new grad positions starting 2023 for full stack/SWE. If you'd like to reach out, please feel free to email me or connect with me on LinkedIn. Meanwhile, I hope you enjoy looking around.
             </p>
             <br />
           </div>
@@ -113,13 +116,11 @@
             <img src="media/cybcube.png" />
           </div>
           <div class="work-desc" data-aos="fade-left" data-aos-delay="150">
-            <h6>UI Engineering</h6>
+            <h6>Frontend Developer</h6>
             <h1>CyberCube</h1>
             <p>
-              I'm currently interning at CyberCube, a cyber risk analytics
-              company in San Francisco. My responsibilities revolve around
-              working on the UI for their suite of applications and resolving
-              bugs.
+              In Summer 2021, I worked with CyberCube, a cyber risk analytics
+              startup in SF. I implemented a system to gather time and usage metrics for CyberCube's CMS software and transformed the data into visualizable graphs for user admins using AWS Quicksight. 
             </p>
             <a
               target="_blank"
@@ -136,13 +137,10 @@
             <img src="media/kopis.png" />
           </div>
           <div class="work-desc" data-aos="fade-left" data-aos-delay="150">
-            <h6>Full Stack Development</h6>
+            <h6>Full Stack Developer</h6>
             <h1>Kopis Mobile</h1>
             <p>
-              I worked on BASE and SCOUT, apps used to store security best
-              practices and perform assessments. I use React and AWS (GraphQL,
-              Dynamo, Lambda) for development. My contributions included
-              building and debugging the apps and improving the UX.
+              I worked on BASE and SCOUT, content management apps used to maintain security best practices and perform assessments. My contributions included building the apps and improving the UX, as well as converting them to a responsive design.
             </p>
             <a
               target="_blank"
@@ -159,13 +157,11 @@
             <img src="media/casectrl.png" />
           </div>
           <div class="work-desc" data-aos="fade-left" data-aos-delay="150">
-            <h6>Full Stack Development</h6>
+            <h6>Web Developer</h6>
             <h1>CaseCtrl</h1>
             <p>
               In summer 2020, I worked with CaseCtrl, a medical startup
-              automating surgery scheduling. I worked on the frontend and
-              backend of the CaseCtrl app using ASP.NET core (HTML/CSS/JS, C#,
-              and SQL).
+              automating surgery scheduling. It was my first internship experience and I got to learn a bit of ASP.NET through exploring the frontend and backend of the CaseCtrl application.
             </p>
             <a
               target="_blank"
@@ -179,23 +175,39 @@
 
         <div class="work-item">
           <div class="work-img" data-aos="fade-right" data-aos-delay="150">
+            <img src="media/blop.png" />
+          </div>
+          <div class="work-desc" data-aos="fade-left" data-aos-delay="150">
+            <h6>Game Designer, Artist, and UI Programmer</h6>
+            <h1>BLOP</h1>
+            <p>
+              BLOP is a physics-based strategy game where you build the highest block tower within the time limit. This was my first game jam project; the jam was Ludum Dare 49 and the theme was "unstable".
+            </p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://amberlightgames.itch.io/blop"
+              class="cta"
+              >Play it here :D</a
+            >
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-img" data-aos="fade-right" data-aos-delay="150">
             <img src="media/andrew.png" />
           </div>
           <div class="work-desc" data-aos="fade-left" data-aos-delay="150">
-            <h6>Game Design</h6>
+            <h6>Game Designer, Programmer, Artist</h6>
             <h1>andrew is bored</h1>
             <p>
-              andrew is bored is a platformer that I built with some friends. It
-              was my first project in Unity. I led the project management,
-              directed the art, and wrote a few of the scripts. You can play a
-              demo of it at the link below.
+              andrew is bored is a platformer that I built with some friends. It has both puzzle and platforming built into it - you control a character who moves around by dashing through blocks of light and dark.
             </p>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://amberlightgames.itch.io/andrew-is-bored"
               class="cta"
-              >View Project</a
+              >Play it here :D</a
             >
           </div>
         </div>
@@ -204,8 +216,8 @@
             <img src="media/site.png" />
           </div>
           <div class="work-desc" data-aos="fade-left" data-aos-delay="150">
-            <h6>Web Design</h6>
-            <h1>Personal Site</h1>
+            <h6>Web Designer</h6>
+            <h1>Portfolio Site</h1>
             <p>
               After eons of procrastination, I made a website. This site was
               created from scratch using the holy trinity. The floating
@@ -261,7 +273,6 @@
           <input type="submit" id="submit" value="Submit" />
           <div class="alert">Your message was delivered!</div>
         </form>
-      </div>
     </section>
 
     <footer>
@@ -314,11 +325,17 @@
       </div>
       <span class="copyright">&copy; Steven Chung</span>
       <span id="year"></span>
-    </footer>
+    </footer>    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+    </script>
   </body>
 </html>
